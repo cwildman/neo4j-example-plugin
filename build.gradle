@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Comment this line to get build to pass
+    implementation 'javax.ws.rs:javax.ws.rs-api:2.0'
+    // Uncomment this line to get build to pass
+    //implementation 'org.neo4j.3rdparty.javax.ws.rs:jsr311-api:1.1.2.r612'
+    implementation 'org.neo4j:neo4j:3.5.9'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.neo4j.test:neo4j-harness:3.5.9'
+}
